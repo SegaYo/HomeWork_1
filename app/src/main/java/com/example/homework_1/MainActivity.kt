@@ -10,15 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       // val message = "Перед Вами Шлеппа"
+        val message1 = "Перед Вами Шлеппа"
 
         val button = findViewById<Button>(R.id.buttonNavigate)
 
         button.setOnClickListener {
-            val intent = Intent(this, ShleppaActivity::class.java).apply {
-
-            }
-           // intent.putExtra("message", message)
+            val intent = Intent(this, ShleppaActivity::class.java)
+            intent.putExtra("message", message1)
             startActivity(intent)
         }
     }

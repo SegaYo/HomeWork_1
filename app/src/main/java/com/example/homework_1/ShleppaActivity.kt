@@ -14,12 +14,12 @@ class ShleppaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shleppa)
 
-            // val message = intent.getStringExtra("message")
-       // val button = findViewById<Button>(R.id.buttonCall)
-      //  button.setOnClickListener {
-          //  val duration = Toast.LENGTH_SHORT
-           // val toast = Toast.makeText(applicationContext, message, duration)
-          //  toast.setGravity(Gravity.CENTER, 0, 0)
-       // }
+        val message1 = intent.getStringExtra("message")
+
+        val button = findViewById<Button>(R.id.buttonCall)
+        button.setOnClickListener {
+            Toast.makeText(this, message1.toString(), Toast.LENGTH_LONG).show()
+        }
     }
 }
+
